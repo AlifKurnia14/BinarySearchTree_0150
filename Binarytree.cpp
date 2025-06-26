@@ -14,3 +14,14 @@ class Node{
         rightchild = nullptr; // intilize right child to null
 
     }
+};
+
+class BinaryTree{
+    public:
+    Node *ROOT;
+
+    BinaryTree(){
+        ROOT = nullptr; // intilizing ROOT to null
+    }
+
+    
