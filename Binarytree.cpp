@@ -24,4 +24,6 @@ class BinaryTree{
         ROOT = nullptr; // intilizing ROOT to null
     }
 
-    
+    void search(int element, Node *&parent, Node *&currentNode){
+        // This fuction searches the currentNode of thr specified Node as well as the current Node of its parent
+        
