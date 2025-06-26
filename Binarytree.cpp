@@ -29,4 +29,19 @@ class BinaryTree{
         currentNode= ROOT;
         parent = nullptr;
         while ((currentNode != nullptr )&&(currentNode->info !=element)){
-            
+            parent = currentNode ;
+            if (element < currentNode ->info)
+            currentNode = currentNode->leftchild;
+            else
+            currentNode = currentNode ->rightchild;
+        }
+    }
+    void insert(){
+        int x;
+        cout << "Masukan nilai: ";
+        cin>>x;
+
+        // step 1: allocate memory for the new node
+        Node *newNode = new Node();
+
+        
